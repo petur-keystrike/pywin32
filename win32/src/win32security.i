@@ -2367,6 +2367,7 @@ static PyObject *PySetTokenInformation(PyObject *self, PyObject *args)
 		#ifdef _WIN32_WINNT_LONGHORN		// Vista info types related to UAC
 		case TokenVirtualizationEnabled:	// @flag TokenVirtualizationEnabled|Boolean
 		case TokenVirtualizationAllowed:	// @flag TokenVirtualizationAllowed|Boolean
+		case TokenUIAccess:			// @flag TokenUIAccess|Boolean
 		#endif
 			bufsize = sizeof(DWORD);
 			buf=malloc(bufsize);
